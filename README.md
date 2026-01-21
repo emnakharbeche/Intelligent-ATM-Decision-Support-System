@@ -21,18 +21,26 @@ The solution integrates **data warehousing, ETL processes, interactive dashboard
 ##  Global Architecture
 The project follows a complete BI workflow:
 
-1. **ETL Process**  
-   Data extraction, transformation, and loading using KNIME
+1. **Data Integration & Data Warehouse**
+   - ETL process (extraction, transformation, and loading) implemented using **KNIME**
+   - Centralized **constellation-schema data warehouse** integrating multiple analytical dimensions related to ATM activities
+   - Data preparation optimized for analytical and decision-support queries
 
-2. **Data Warehouse**  
-   Constellation schema integrating multiple analysis dimensions related to ATM activities
+2. **Power BI Dashboard**
+   - Interactive decision-support dashboards developed with **Power BI**
+   - Dashboards organized into targeted analytical themes
 
-3. **Analytics & Prediction**  
-   Machine Learning and Deep Learning models for cash demand forecasting
+3. **Analytics & Prediction**
+   - Development of **Machine Learning and Deep Learning models** for ATM cash demand forecasting
+   - Implemented models:
+     - Linear Regression
+     - Random Forest
+     - SARIMA
+     - LSTM
 
-4. **Visualization & Decision Support**  
-   Power BI dashboards and a web-based decision platform
-
+4. **Web-Based Decision Platform**
+   - Web application for **deploying Power BI dashboards and predictive models**
+  
 ---
 
 ## Data Warehouse Design

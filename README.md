@@ -103,4 +103,3 @@ A web application was developed to:
 
 ---
 
-## Project Structure
